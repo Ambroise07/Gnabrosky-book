@@ -7,7 +7,7 @@
 booksData = [
 
       {
-   picture: "imgs/johnGLake.png",
+   picture: "imgs/johnGLake.PNG",
    title: "The Collected Work of John G. Lake",
    publish_ref: "John Bawn Digital",
    pages: 823,
@@ -18,7 +18,7 @@ booksData = [
    },
 
    { 
-   picture: "imgs/foi.png",
+   picture: "imgs/foi.PNG",
    title: "La Foi Est l'Assurance",
    publish_ref: "William Marrion Brahnam",
    pages: 32,
@@ -28,7 +28,7 @@ booksData = [
    },
 
    { 
-   picture: "imgs/bible21.png",
+   picture: "imgs/bible21.PNG",
    title: "La Bible Second 21",
    publish_ref: "Importantia Publishing",
    pages: 3533,
@@ -38,7 +38,7 @@ booksData = [
    },
 
    {
-   picture: "imgs/meditation.png",
+   picture: "imgs/meditation.PNG",
    title: "Comment etudier la bible ?",
    publish_ref: "Vie, Espoir et Vérité",
    pages: 24,
@@ -48,7 +48,7 @@ booksData = [
    },
 
        {
-      picture: "imgs/onething.png",
+      picture: "imgs/onething.PNG",
       title: "The One Things_ The Surprisingly truth behind extraodinary results",
       publish_ref: "Gary Keller & Jay Papasan,  Bard Press",
       pages: 295, 
@@ -60,7 +60,7 @@ booksData = [
    },
 
     {
-   picture: "imgs/deepwork.png",
+   picture: "imgs/deepwork.PNG",
    title: "Deep Work",
    publish_ref: "Cal NewPort, Grand Central Publishing",
    pages: 220,
@@ -70,7 +70,7 @@ booksData = [
    }, 
 
     {
-   picture: "imgs/zerotoone.png",
+   picture: "imgs/zerotoone.PNG",
    title: "Zero to One ",
    publish_ref: "Peter Thiel & Blake Masters, Crown Business",
    pages: 186,
@@ -81,7 +81,7 @@ booksData = [
    },
 
    {
-   picture: "imgs/student.png",
+   picture: "imgs/student.PNG",
    title: "How to Become a straight-A student",
    publish_ref: "Cal Newport, BroadWay Book",
    pages: 286,
@@ -93,7 +93,7 @@ booksData = [
 
 
    {
-   picture: "imgs/algebre.png",
+   picture: "imgs/algebre.PNG",
    title: "Cours Algèbre 2, ECUE 1",
    publish_ref: "Vincen Kouassi KouaKou",
    pages: 46,
@@ -104,7 +104,7 @@ booksData = [
    },
 
    {
-   picture: "imgs/electrostatique.png",
+   picture: "imgs/electrostatique.PNG",
    title: "Cours & Travaux dirigés de Physique (Electrostatique & Electricite)",
    publish_ref: "Keiita Mélalie",
    pages: 102,
