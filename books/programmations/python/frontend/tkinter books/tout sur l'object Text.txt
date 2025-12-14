@@ -1,0 +1,31 @@
+﻿ici text est un objet de la classe tk.Text
+
+ 1. Récupérer tout le contenu
+contenu = text.get("1.0", "end-1c")
+
+
+"1.0" : début du texte (ligne 1, caractère 0)
+"end-1c" : jusqu’à la fin, moins le dernier saut de ligne automatique
+Résultat : une chaîne de caractères contenant tout le texte
+
+
+➕ 2. Ajouter du contenu
+text.insert("end", "\nNouveau paragraphe ajouté.")
+ 
+
+Méthode	Description
+get(start, end)	Récupère le texte entre deux index
+insert(index, string)	Insère du texte à une position donnée
+delete(start, end)	Supprime une portion de texte
+index(index)	Convertit un index en position absolue
+see(index)	Fait défiler le texte pour rendre visible une position
+tag_add(...), tag_config(...)	Pour styliser ou interagir avec des portions de texte
+mark_set(...), mark_unset(...)	Pour gérer des marqueurs internes
+
+get(start, end)	Récupère du texte	text.get("1.0", "end-1c")
+insert(index, string)	Insère du texte	text.insert("end", "Ajout")
+delete(start, end)	Supprime du texte	text.delete("1.0", "end")
+index(index)	Convertit un index en position absolue	text.index("insert")
+see(index)	Fait défiler pour rendre visible	text.see("end")
+tag_add(...) / tag_config(...)	Styliser du texte	text.tag_add("gras", "1.0", "1.4")
+mark_set(...) / mark_unset(...)	Gérer des marqueurs	text.mark_set("position", "2.0")

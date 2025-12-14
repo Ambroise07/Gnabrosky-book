@@ -1,0 +1,67 @@
+
+hr{
+	margin-bottom: 20px;
+}
+
+.img{
+	width: 200px;
+	height: 200px;
+	margin-top: 20px;
+	background-color: lightgray;
+	border-radius: 50%;
+}
+
+/* hack mettre la hauteur de ligne à 1px */
+
+#heard{
+	display: flex;
+	margin-top: 100px;
+}
+
+#name{
+	margin-top: 45px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#name h1{
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 2em;
+	line-height: 1px; 
+}
+#name h3{
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 10px;
+	line-height: 1px;
+}
+#name p{
+	font-size: .5em;
+	font-weight: normal;
+	margin-top: 2px;
+	line-height: 10px;
+	color: black;
+}
+
+
+#user-info{
+	margin-left: 220px;
+	max-height:150px;
+}
+
+#user-info a{
+	color: lightblue;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+#user-info a:hover{
+	color:blue;
+}
+
+#user-info h2{
+	font-size: 18px;
+	font-weight: normal;
+}

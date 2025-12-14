@@ -1,0 +1,203 @@
+button a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/**********************style particulier ************************/
+
+div[id*="topic"]{
+font-size: .9em;
+}
+
+div[id*="topic"] span{
+	display: flex;
+	justify-content: space-between;
+}
+div[id*="topic"] span button{
+max-height: 30px;
+margin-top: 15px;
+}
+
+/************ style des classe & id *********************/
+#first-topic, #second-topic, #third-topic, #fourth-topic{
+margin-top: 90px;
+}
+
+#fourth-topic button{
+	margin-top: 15px;
+}
+
+#third-topic h2{
+	font-size: 1.6em;
+}
+
+#fourth-topic h2{
+	font-size: 1.9em;
+}
+
+
+#content{ 
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/****************************************************************************************/
+/********************* style de la page de description **********************************/
+
+
+#book-description.visible{
+	opacity: 1;
+	position: fixed;
+	top: 11%;
+	bottom: 1%;
+	left: 20%;
+	right: 20%;
+	background-color: #ffff;
+	display: flex;
+	border-style: solid;
+	border-color: lightgray;
+	border-width: 5px;
+	border-radius: 1%;
+
+}
+
+#book-description.hide{
+	display: none;
+}
+
+
+#description{
+	margin-top: 11.8%;
+	margin-left: 11%;
+}
+
+#content{
+	margin-left: 0;
+}
+
+#book-description button{
+	position: absolute;
+	bottom: 10%;
+	right: 2%;
+	width: 14.5em;
+	height: 2.5em;
+}
+
+#book-description h1{
+	position: absolute;
+	top: 5%;
+	left: 10%;
+        right: 88%;
+}
+
+#book-description h1 button{
+	position: absolute;
+        left: 4000%;
+        top:-10%;
+        width: 50px;
+        background: #fff;
+}
+
+
+#one-book{
+	width: 200px;
+	height: 250px;
+	background-color: lightgray;
+	margin-top: 15%;
+	margin-left: 10%;
+	/*margin-right: 5%;*/
+}
+
+
+/* **************/
+
+.books{
+	display: flex;
+	justify-content: space-between;
+}
+.book{
+	width: 200px;
+	height: 250px;
+	background-color: lightgray;
+}
+
+
+/***************************************************************************************/
+/*************************** classes des pages de couvertures des livres ***************/
+
+/*
+ces classes sont ajoutées par le fichier 
+js, dans les div de classe book
+*/
+
+.algebre{
+	background-image: url('imgs/algèbre.png');
+	background--attachment: fixed;
+}
+
+.analyse{
+	background-image: url('imgs/analyse.png');
+}
+
+.bible21{
+	background-image: url('imgs/bible21.png');
+}
+
+.deepwork{
+	background-image: url('imgs/deepwork.png');
+}
+
+.electrostatique{
+	background-image: url('imgs/electrostatique.png');
+}
+
+.foi{
+	background-image: url('imgs/foi.png');
+}
+
+.john{
+	background-image: url('imgs/john g. lake.png');
+}
+
+.kivy{
+	background-image: url('imgs/kivy.png');
+}
+
+.languageC{
+	background-image: url('imgs/languageC.png');
+}
+
+.latex{
+	background-image: url('imgs/latex.png');
+}
+
+.leconsbibliques{
+	background-image: url('imgs/leconsbibliques.png');
+}
+
+.meditation{
+   background-image: url('imgs/meditation.png');
+}
+
+
+.onething{
+	background-image: url('onething.png');
+}
+
+.slowproductivity{
+	background-image: url('imgs/slowproductivity.png');
+}
+
+.student{
+	background-image: url('imgs/student.png');
+}
+
+.tkinter{
+	background-image: url('imgs/tkinter.png');
+}
+
+.zerotoone{
+	background-image: url('imgs/zerotoone.png');
+}

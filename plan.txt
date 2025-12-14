@@ -1,0 +1,11 @@
+les classes à faire : 
+
+-une classe en css qui rend l'élément en bas de manier invisible-ok
+-une classe qui ajoute l'element au centre de manière visible-ok
+
+en js: 
+ -une fonction qui affiche les images-ok
+ -une fonction qui affiche le popup des elements-ok 
+ -une fonction qui affiche ou masque le popup.-ok
+ - completer la variable booksdata de clés file_path qui contien le
+   lien des documents pdf.

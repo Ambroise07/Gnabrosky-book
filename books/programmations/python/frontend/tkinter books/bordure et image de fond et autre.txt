@@ -1,0 +1,234 @@
+﻿ 
+# context menu version 1
+note des commentaires ils sont important : 
+
+import tkinter as tk
+
+# Fenêtre principale
+
+root = tk.Tk
+root.geometry("300x200")
+
+root.configure(bg="white")
+
+
+# Simuler un menu contextuel
+
+menu_frame = tk.Frame(
+ 
+	root,
+    
+	bg="white",
+    
+	highlightbackground="gray",   # Couleur de la bordure
+    
+	highlightthickness=1,         # Épaisseur de la bordure
+    
+	bd=0,                         # Pas de bordure classique
+    
+	relief="solid"                # Style de bordure 
+        
+)
+
+
+# Position du menu (simulé)
+
+menu_frame.place(x=50, y=50, width=150, height=100)
+
+
+
+# Ajouter des éléments à ton menu
+
+label1 = tk.Label(menu_frame, text="Option 1", bg="white", anchor="w")
+
+label2 = tk.Label(menu_frame, text="Option 2", bg="white", anchor="w")
+
+label1.pack(fill="x", padx=10, pady=5)
+
+label2.pack(fill="x", padx=10, pady=5)
+
+
+
+root.mainloop()
+
+#version 2 : 
+import tkinter as tk
+
+
+def show_context_menu
+	# Supprimer l'ancien menu s'il existe
+    
+	try:
+        
+		context_menu.destroy()
+    
+	except:
+        
+		pass
+
+    
+	# Créer un menu flottant
+    
+	global context_menu
+    
+	context_menu = tk.Toplevel(root)
+    
+	context_menu.overrideredirect(True)  # Pas de bordures
+    
+	context_menu.geometry(f"150x100+{event.x_root}+{event.y_root}")
+    
+	context_menu.configure(
+	bg="white", 
+	highlightbackground="gray", 
+	highlightthickness=1)
+
+    # Fonction pour effet de survol
+    
+
+def on_enter
+	e.widget.configure(bg="#e6e6e6")  # Gris clair
+
+
+    
+def on_leave(e):
+        
+	e.widget.configure(bg="white")
+
+ 
+   
+# Ajouter des options avec effet de survol
+    
+for text in ["Option 1", "Option 2", "Option 3"]:
+        
+	label = tk.Label(context_menu, text=text, bg="white", anchor="w", padx=10)
+        
+	label.pack(fill="x", pady=5)
+        
+	label.bind("<Enter>", on_enter)
+        
+	label.bind("<Leave>", on_leave)
+
+
+# Fenêtre principale
+root = 
+tk.Tk()
+
+root.geometry("400x300")
+
+root.configure(bg="white")
+
+
+
+# Clic droit pour afficher le menu
+
+root.bind("<Button-3>", show_context_menu)
+
+
+root.mainloop()
+
+
+
+
+# le widget Text : 
+
+
+1. Observer le comportement du widget Text
+
+Le widget Text est destiné à afficher et éditer du texte librement. Mais il ne permet pas, à lui seul, de dessiner des éléments graphiques comme des lignes. Donc pour "dessiner" des lignes, il faut penser à le combiner avec quelque chose de plus graphique.
+2. Choisir un support graphique
+
+Le candidat idéal ici serait un Canvas. C’est un widget qui permet de dessiner des formes (lignes, rectangles, cercles…). Si on met un Canvas derrière ou autour le Text, on pourrait dessiner les fameuses lignes dessus.
+
+
+3. Déterminer la disposition
+
+L’idée serait de :
+
+    Placer le Text dans le Canvas pour qu’il ait l’air intégré à l’ensemble.
+
+    Synchroniser les dimensions pour que les lignes suivent la hauteur visible du texte.
+
+4. Simuler les lignes de cahier
+
+Chaque ligne serait une ligne horizontale (une create_line()).
+
+    Espacement régulier entre les lignes (par exemple tous les 20 pixels).
+
+    Utiliser une couleur douce (bleu clair, gris) pour simuler l’encre de fond.
+
+5. Réagir aux changements de taille
+
+Il faut détecter quand la fenêtre ou le Canvas est redimensionné, pour ajuster les lignes.
+
+    Lier un événement <Configure> pour redessiner les lignes.
+
+    S’assurer que le texte reste aligné avec les lignes visuelles.
+
+
+6. Personnaliser l’apparence
+
+    Choisir une couleur de fond agréable (beige, blanc cassé) pour simuler le papier.
+
+    Utiliser une police monospace (comme Courier) pour mieux aligner le texte sur les lignes.
+
+    Ajouter éventuellement une marge rouge sur le côté gauche, comme les cahiers de classe.
+
+💭 Tu vois, en réfléchissant ainsi, on conçoit non pas juste du code, mais une expérience utilisateur et une esthétique inspirée du réel. Et chaque choix est motivé par le souci de lisibilité, d’élégance et d’efficacité.
+
+Tu veux qu’on pousse l’idée encore plus loin, avec des petits détails comme une texture de papier ou des effets d’ombre ?
+
+
+import tkinter as tk
+
+
+
+def draw_lines(canvas, text_height, line_spacing):
+    
+	canvas.delete("lines")  # Supprimer les anciennes lignes
+
+    
+	# Dessiner les lignes
+    
+	for i in range(0, text_height, line_spacing):
+        
+	canvas.create_line(0, i, canvas.winfo_width(), i, fill="lightblue", tags="lines")
+
+def on_resize(event):
+    
+	draw_lines(canvas, text_height=event.height, line_spacing=20)
+
+
+
+root = tk.Tk()
+
+root.geometry("500x400")
+
+
+# Créer un Canvas derrière le Text
+
+canvas = tk.Canvas(root, bg="#fdf6e3", highlightthickness=0)
+
+canvas.pack(fill="both", expand=True)
+
+
+# Widget Text transparent (sans couleur de fond)
+
+text = tk.Text(canvas, bg="#fdf6e3", bd=0, font=("Courier", 12), 
+text_window = canvas.create_window(0, 0, anchor="nw", window=text, width=500, height=400)
+
+
+# Lier le redimensionnement pour redessiner les lignes
+
+canvas.bind("<Configure>", on_resize)
+
+root.mainloop()
+
+
+
+Pourquoi utiliser create_window() ?
+
+Le Canvas est conçu pour dessiner (lignes, formes, images…), 
+mais il ne peut pas directement contenir des widgets Tkinter 
+comme le ferait une Frame. 
+C’est là que create_window() entre en jeu : 
+elle crée une zone dans le canvas où tu peux insérer un widget.

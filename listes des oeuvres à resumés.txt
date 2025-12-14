@@ -1,0 +1,11 @@
+# les resumes longs:
+
+1. Meditation -ok 
+2. Deep Work - ok 
+3. Zero to One - ok 
+4. Student - ok 
+5. Algebre - ok  
+6. languageC -ok 
+7. Tkinter-ok 
+8. Kivy-ok
+
