@@ -127,7 +127,7 @@ booksData = [
 
 
       {
-   picture: "imgs/analyse.png",
+   picture: "imgs/analyse.PNG",
    title: "Analyse Mathematiques, licence 1",
    publish_ref: "Modeste Essoh",
    pages: 220,
@@ -141,7 +141,7 @@ booksData = [
    
 	{
 
-   picture: "imgs/languageC.png",
+   picture: "imgs/languageC.PNG",
    title: "La programmation en C moderne",
    publish_ref: "Mehdidou99, zeste de Savoir",
    pages: 618,
@@ -153,7 +153,7 @@ booksData = [
 
 
 {
-   picture: "imgs/latex.png",
+   picture: "imgs/latex.PNG",
    title: "Initiation à Latex",
    publish_ref: "Adrien Bouzigues",
    pages: 281,
@@ -164,7 +164,7 @@ booksData = [
 	},
 
    {
-   picture: "imgs/tkinter.png",
+   picture: "imgs/tkinter.PNG",
    title: "Python and Tkinter Programming",
    publish_ref: "John E. Grayson, Manning Greenwich",
    pages: 684,
@@ -175,7 +175,7 @@ booksData = [
 	},
 
 	{
-   	picture: "imgs/kivy.png",
+   	picture: "imgs/kivy.PNG",
    	title: "Kivy Blue Print",
    	publish_ref: "Mark Vasilkov, Packt Publishing",
    	pages: 282,
