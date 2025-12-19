@@ -1,0 +1,91 @@
+/* css spécifique aux téléphone */
+
+/* android */
+@media (min-width: 344px) and (min-height:860px){
+
+body{ 
+  padding:0;
+
+}
+
+nav {
+  left:0;
+}
+
+nav h1{
+font-size: 1.09em;
+margin-left: 15px;
+}
+
+nav #nav h3{
+margin-top: 10px;
+}
+
+div[id*="-topic"]{
+margin-left: 15px;
+}
+
+.books{
+  display: flex;
+  flex-direction: column;
+}
+
+.book {
+  width: 110px;
+  height: 135px;
+  margin-top: 15px;
+
+}
+
+.hide{
+ color:blue;
+}
+
+}
+
+
+
+/* iphone */ 
+@media (min-width: 375px) and (min-height:667px){
+
+body{ 
+  padding:0;
+}
+
+nav {
+  left:0;
+}
+
+nav h1{
+font-size: 1.09em;
+margin-left: 15px;
+}
+
+nav #nav h3{
+margin-top: 10px;
+}
+
+div[id*="-topic"]{
+margin-left: 15px;
+}
+
+.books{
+  display: flex;
+  flex-direction: column;
+}
+
+.book {
+  width: 110px;
+  height: 135px;
+  margin-top: 15px;
+
+}
+
+.book div{
+ display: block;
+}
+
+.visible{
+ display:none;
+}
+}
