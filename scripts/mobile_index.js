@@ -55,9 +55,9 @@ function CreateRouteDiv(args){
 
 
 books = document.querySelectorAll("img")
-console.log(books)
+
 for(let book of books){
-  console.log(window.innerWidth <= 1000 && window.innerHeight <= 1500)
+
   if (window.innerWidth <= 1000 && window.innerHeight <= 1500){
     //1 
     key = book.getAttribute('src').split('/')[1].replace('.png', '')
@@ -81,10 +81,3 @@ for(let book of books){
 
 }
 
-// 5 
-//console.log(document.querySelector('#book-description'))
-//if (window.innerWidth >= 300){
-//document.querySelector('#book-description').remove()
-//}
-
-//console.log(window.innerWidth >= 300)
