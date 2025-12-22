@@ -15,7 +15,7 @@ todo :
 
 4. ajouter la nouvelle div sur la page web ! -ok
 
-5. retirer le conteneur de description. 
+5. retirer le conteneur de description. -ok 
 **/
 
 
@@ -32,7 +32,7 @@ function CreateRouteDiv(args){
 
 	/* ajout des données */ 
         h2.textContent = args.title
-        li_one.textContent = args.pages
+        li_one.textContent = args.pages+ " pages"
         li_two.textContent = args.ref
         open_button.textContent = "Ouvrir"
 
@@ -55,10 +55,10 @@ function CreateRouteDiv(args){
 
 
 books = document.querySelectorAll("img")
-
+console.log(books)
 for(let book of books){
- 
-  if (!book && window.innerWidth >= 300){
+  console.log(window.innerWidth <= 1000 && window.innerHeight <= 1500)
+  if (window.innerWidth <= 1000 && window.innerHeight <= 1500){
     //1 
     key = book.getAttribute('src').split('/')[1].replace('.png', '')
     
@@ -71,7 +71,7 @@ for(let book of books){
    
    //3
    div = CreateRouteDiv({"title":title, "pages":pages, "ref":ref, "url":url})
-   div.style.setProperty("display", "none")
+   div.setAttribute('id', 'book-info')
    
 
    //4
@@ -82,7 +82,9 @@ for(let book of books){
 }
 
 // 5 
+//console.log(document.querySelector('#book-description'))
+//if (window.innerWidth >= 300){
+//document.querySelector('#book-description').remove()
+//}
 
-if (window.innerWidth <= 400){
-document.querySelector('.hide').remove()
-}
+//console.log(window.innerWidth >= 300)

@@ -88,4 +88,33 @@ margin-left: 15px;
 .visible{
  display:none;
 }
+
+#book-info {
+font-size: 0.25em;
+width: 110px;
+line-height: 10px;
+}
+
+#book-info ul{
+list-style: none;
+padding: 0;
+display:flex;
+margin: 8px 0;
+}
+
+#book-info h2{
+word-wrap:break-word;
+}
+
+#book-info ul li:nth-child(2){
+margin-left: 5px;
+word-wrap:break-word;
+}
+
+#book-info button{
+ font-size:0.9em;
+ margin: 15% 60%;
+}
+
+
 }

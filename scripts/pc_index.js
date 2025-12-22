@@ -278,7 +278,7 @@ function PopupHandler(img){
     
 for (let data of booksData){
       
-      if (popup_window !== null && src == data.picture){
+      if (src == data.picture){
          popup_window.children[1].setAttribute('src', data.picture)
          
          popup_data[0].textContent = data.title
@@ -343,6 +343,21 @@ function Connect(){
 
 }
 
+function removeDockInfo(){
+/* supprime les informations sur le livre masqué pour les 
+  smartphones 
+
+*/
+
+if (dockInfo){
+
+ 	for (dock of dockInfo){
+ 	
+        dock.style.setProperty('display', 'none')
+	}
+
+   }
+}
 
 
 ////////////////////////////////script principal ////////////////////////////////////////
@@ -350,3 +365,4 @@ Author()
 Connect()
 TriggerCallback()
 Storage()
+removeDockInfo()
