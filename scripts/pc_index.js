@@ -203,9 +203,6 @@ function Storage(){
     		- idée originale, Gnabro Israel
 */
 
-//localStorage.key.title
-//localStorage.key.publish_ref
-//localStorage.pages
 
 for(let book of booksData){
 	key = book.picture.substring(book.picture.indexOf('/'), book.picture.length-4).split('/')[1]
@@ -213,8 +210,6 @@ for(let book of booksData){
         localStorage.setItem(key + "_publish_ref", book.publish_ref)
         localStorage.setItem(key + "_pages", book.pages)
 
-	// test dans l'autre fichier js
-	//console.log(localStorage)
 
 }
 
